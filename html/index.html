@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESIST: AMR Detection & Data Analysis</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+<div class="container mt-4">
+    <!-- Jumbotron Section with Video -->
+    <div class="jumbotron text-center bg-info border rounded shadow-sm">
+        <video style="width: 100%; height: auto;" controls autoplay muted>
+            <source src="static/resist_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h3 class="display-4 text-primary">Empowering Biologists and Enhancing Research</h3>
+        <p class="lead text-light">
+            Streamline the detection of foodborne pathogen antibiotic resistance with our web-based analytical tools.
+        </p>
+        <hr class="my-4 bg-white">
+        <p class="text-light">
+            Simplify your research with our comprehensive AMR prediction platform, avoiding cumbersome software setups.
+        </p>
+        <a class="btn btn-primary btn-lg" href="/about" role="button">Discover More</a>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="resist-biology-data-lab-section text-center py-4">
+        <h1 class="text-primary mb-3">About Us</h1>
+        <p>
+            At the RESIST Biology Data Lab, we apply machine learning and data science to scientific research. Our goal is to provide practical tools that support scientific and medical research through data analysis.
+        </p>
+        <h5>Machine Learning | Data Science | Research Support</h5>
+    </div>
+
+    <!-- Funders Section -->
+    <div class="funders-section py-4">
+        <h2 class="text-center text-primary mb-3">Our Support</h2>
+        <p class="text-center">
+            Currently funded by a primary sponsor, we are open to new partnerships.
+        </p>
+        <div class="funder-logo text-center">
+            <img src="static/img/usa.png" alt="Funder Logo" class="img-thumbnail" style="max-width: 150px;">
+            <img src="static/img/usa2.png" alt="Funder Logo" class="img-thumbnail" style="max-width: 150px;">
+        </div>
+        <p class="text-center">
+            To support our research or inquire about funding opportunities, <a href="#contact">contact us</a>.
+        </p>
+    </div>
+
+    <!-- Call to Action for Biologists -->
+    <div class="call-to-action-section py-4">
+        <div class="row">
+            <div class="col-md-6 mb-3 text-center">
+                <h4 class="text-primary">For Researchers</h4>
+                <p class="text-secondary">
+                    Explore our tools designed for biological data analysis.
+                </p>
+                <a class="btn btn-primary" href="/xgboost">Our Tools</a>
+            </div>
+            <div class="col-md-6 mb-3 text-center">
+                <h4 class="text-primary">Get in Touch</h4>
+                <p class="text-secondary">
+                    If you have feedback or are interested in collaborating, we'd like to hear from you.
+                </p>
+                <a class="btn btn-primary" href="#contact">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div class="user-expansion-section py-4 bg-light">
+        <h2 class="text-center text-primary mb-3" id="contact">Contact Us</h2>
+        <p class="text-left text-secondary mb-4">
+            We are looking for microbiologists, food scientists, computer engineers, software developers, programmers, and bioinformaticians. If you are interested to join, collaborate, or inquire, please do not hesitate to email <a href="mailto:peggy.woh@polyu.edu.hk">peggy.woh@polyu.edu.hk</a>.<br>
+            <b>Undergraduate students:</b> To discuss potential research projects or ideas, feel free to reach out to Peggy and arrange a brief meeting.<br>
+            <b>Graduate students:</b> Prospective students interested in pursuing a Master or PhD program in Food Safety or Food Technology (AI) at Hong Kong Polytechnic University can submit a CV along with a brief statement of their research interest before applying. They can arrange a discussion with Peggy in advance.<br>
+            <b>Other positions:</b> The lab is always actively looking for interns, researchers, and developers. If you are interested in doing these positions, please do not hesitate to email Peggy to discuss.<br>
+            <b>Office:</b> Department of Food Science and Nutrition, Faculty of Science, The Hong Kong Polytechnic University, Hung Hom, Kowloon, Hong Kong.
+        </p>
+        <div class="text-center">
+            <form action="/" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" class="form-control" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LcU2nspAAAAADRrLeFC-gC_7KYh9iuseR99bX7_"></div>
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
